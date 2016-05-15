@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Easy Traffic Ticket Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_regis">regis</string>
+
+    <string-array name="quixote_characters">
+        <item>Drink and Drive</item>
+        <item>Speeding</item>
+        <item>Parking on Zeebra Crossing</item>
+        <item>Crossing Single Line</item>
+        <item>Crossing Double Line</item>
+        <item>Driving without documents</item>
+        <item>Malfunctioned Lights</item>
+        <item>Dangerous Overtaking</item>
+        <item>Driving without helmet</item>
+    </string-array>
+
+    <string-array name="youare">
+        <item>Traffic</item>
+        <item>Payment</item>
+    </string-array>
+    <string name="title_activity_issue_start">IssueStart</string>
+    <string name="raw_title">License Number</string>
+    <string name="raw_msg">Scan</string>
+    <string name="title_activity_issue_tick2">IssueTick2</string>
+    <string name="title_activity_issue_tick3">IssueTick3</string>
+    <string name="title_activity_issue_tick4">IssueTick4</string>
+    <string name="title_activity_payment_start">PaymentStart</string>
+    <string name="title_activity_payment2">Payment2</string>
+    <string name="title_activity_issue_tick_fin">IssueTickFin</string>
+
+</resources>

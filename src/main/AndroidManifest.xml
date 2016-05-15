@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.amanda.easytrafficticketapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- for card.io card scanning -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <!-- for most things, including card.io & paypal -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <activity
+            android:name=".Welcome"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".regis"
+            android:label="@string/title_activity_regis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IssueStart"
+            android:label="@string/title_activity_issue_start"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IssueTick2"
+            android:label="@string/title_activity_issue_tick2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IssueTick3"
+            android:label="@string/title_activity_issue_tick3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IssueTick4"
+            android:label="@string/title_activity_issue_tick4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaymentStart"
+            android:label="@string/title_activity_payment_start"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Payment2"
+            android:label="@string/title_activity_payment2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IssueTickFin"
+            android:label="@string/title_activity_issue_tick_fin"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

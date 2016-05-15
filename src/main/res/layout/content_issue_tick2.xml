@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.amanda.easytrafficticketapplication.IssueTick2"
+    tools:showIn="@layout/activity_issue_tick2"
+    android:background="@drawable/tic2">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ban2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name:"
+        android:id="@+id/txtname"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Adress :"
+        android:id="@+id/txtadress"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/txtname"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telephone : "
+        android:id="@+id/txttel"
+        android:textColor="#ffffff"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/txtadress"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:id="@+id/imgBanner"
+        android:background="@drawable/noblac"
+        android:layout_below="@+id/txtDT"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnNextt"
+        android:visibility="invisible"
+        android:background="@drawable/citt"
+        android:layout_below="@+id/imgBanner"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/imgBanner"
+        android:onClick="step3" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnBack"
+        android:background="@drawable/backt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Driving Types"
+        android:id="@+id/txtDT"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/txttel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+</RelativeLayout>
